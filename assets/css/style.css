@@ -12,6 +12,7 @@ FFFD82
 FFFD98
 
 5BC0EB */
+.clear {clear: both;}
 
 .header { 
     background: #A7E522;
@@ -99,6 +100,13 @@ footer i{
     animation: none;
 }
 
-.digital-time, .digital-time h1{position: fixed;top: 50%;left: 50%;transform: translateX(-50%)translateY(-50%);font-size: 30px;background: red;width: 200px;height: 200px;border-radius: 100%;}
+.digital-time {
+    float: right;
+    color: white;
+    line-height: 2;
+}
 
-.digital-time h1{z-index: 122;}
+.footer-container  {
+    float: left;
+    line-height: 2;
+}
