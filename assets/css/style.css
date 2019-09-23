@@ -19,14 +19,6 @@ THE ANIMATION
     100% {transform: translateX(-50%)translateY(-50%);filter: hue-rotate(5rad)}
 } 
 
-@keyframes error {
-    0%  {transform: translateX(-50%)translateY(-50%); background: red;}
-    25%  {transform: translateX(-53%)translateY(-50%);background: red;}
-    50%  {transform: translateX(-50%)translateY(-50%);background: red;}
-    75%  {transform: translateX(-47%)translateY(-50%);background: red;}
-    100% {transform: translateX(-50%)translateY(-50%);background: red;}
-} 
-
 
 
 /********************************************************************************************************************************* 
@@ -85,4 +77,3 @@ THE LOGIN
 .main-login-box [type='submit']:hover{background: #A7E522;}
 
 .main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
-.main-login-box-error{animation: error 200ms 1;}
