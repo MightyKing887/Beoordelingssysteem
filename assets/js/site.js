@@ -33,4 +33,3 @@ $('#header-login').click(function(){
   $(".main-login-box").toggleClass('main-login-box-active');
 });
 
-
