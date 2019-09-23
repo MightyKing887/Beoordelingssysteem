@@ -28,3 +28,12 @@ $('.footer-container').click(function(){
         state = false;
     }
 });
+
+$('#header-login').click(function(){
+  $(".main-login-box").toggleClass('main-login-box-active');
+});
+
+
+$('.footer-container').click(function(){
+  $('.main-login-box').toggleClass("main-login-box-error");
+});
