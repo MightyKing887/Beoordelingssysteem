@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header-container maxw1">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Klas</a></li>
+                    <li><a id="header-login">Inloggen</a></li>
+                </ul>
+            </nav>
+            <section class="header-login">
+                <p>Ingelogd als:</p>
+            </section>
+        </section>
+    </header>
+    <main>
+        <!-- Bij de class onder de form moet nog de class "header-login-error komen!!" -->
+        <form  method="POST" action="?" class="main-login-box " >
+            <label>Gebruikersnaam:</label>
+            <input type="text">
+            <label>Wachtwoord:</label>
+            <input type="password">
+            <input type="submit" id="login-button" value="Login">
+            <p>Er is iets verkeerd gegaan</p>
+        </form>
+        <section class="main-overzicht">
+            
+        </section>
+    </main>
+    <footer>
+        <section class="footer-max maxw1">
+            <section class="footer-container">
+                <i class="em em-clock9"></i>
+                <i class="em em-clock130"></i>
+                <i class="em em-clock230"></i>
+                <i class="em em-clock5"></i>
+                <i class="em em-clock9"></i>                
+            </section>
+            <section class="digital-time" id='txt'></section>
+            <div class="clear"></div>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/site.js"></script>
+</body>
+</html>

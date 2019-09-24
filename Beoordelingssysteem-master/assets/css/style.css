@@ -1,0 +1,202 @@
+
+/********************************************************************************************************************************* 
+THE ANIMATION
+**********************************************************************************************************************************/
+
+
+@keyframes move {
+    0%   {color: #fff}
+    25%  {transform: rotate(90deg);filter: hue-rotate(10deg)}
+    50%  {transform: rotate(180deg);filter:hue-rotate(60deg)}
+    75%  {transform: rotate(270deg);filter: hue-rotate(120deg)}
+    100% {transform: rotate(360deg);filter: hue-rotate(180deg);}
+}
+
+@keyframes inlog {
+    0%  {transform: translateX(200%)translateY(200%);filter: hue-rotate(1rad)}
+    25%  {transform: translateX(137.5%)translateY(137.5%);filter: hue-rotate(2rad)}
+    50%  {transform: translateX(75%)translateY(75%);filter: hue-rotate(3rad)}
+    75%  {transform: translateX(12.5%)translateY(12.5%);filter: hue-rotate(4rad)}
+    100% {transform: translateX(-50%)translateY(-50%);filter: hue-rotate(5rad)}
+} 
+
+@keyframes inlog-error {
+    0% {transform: translateX(-50%)translateY(-50%);}
+    25% {transform: translateX(-47%)translateY(-50%);}
+    50% {transform: translateX(-50%)translateY(-50%);}
+    75% {transform: translateX(-53%)translateY(-50%);}
+    100% {transform: translateX(-50%)translateY(-50%);}
+}
+
+
+
+/********************************************************************************************************************************* 
+THE BASE
+**********************************************************************************************************************************/
+
+.clear {clear: both;}
+
+
+/********************************************************************************************************************************* 
+THE HEADER
+**********************************************************************************************************************************/
+
+
+
+.header-login{
+    float: right;
+}
+
+.header {background: #A7E522;width: 100vw;height: 6rem;}
+.header p, .header li a{color: rgb(40, 40, 40);}
+.header p:hover, .header li:hover{font-weight: bold;background: #FFFD82;}
+.header-nav li{float: left;padding: 20px 5px;}
+
+
+.header-login p{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.header-nav a{padding: 20px;}
+.header-login{float: right;}
+.header-login p{padding: 20px;cursor: pointer;}
+
+@media screen and (max-width: 500px) {
+
+    .header{
+        height: 5rem;
+    }
+    .header li, .header p{
+        font-size: 12px;
+    }
+
+    .header{height: 5rem;}
+    .header li, .header p{font-size: 12px;}
+}
+
+@media screen and (max-width: 400px) {
+
+    .header{
+        height: 4.5rem;
+    }
+    .header li, .header p{
+        font-size: 10px;
+    }
+
+    .header{height: 4.5rem;}
+    .header li, .header p{font-size: 10px;}
+}
+
+
+/********************************************************************************************************************************* 
+THE FOOTER
+**********************************************************************************************************************************/
+
+
+footer{
+    background: #222;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px;
+}
+footer{background: #222;position: fixed;bottom: 0;width: 100vw;padding: 20px;}
+footer p{font-size: 12px;}
+
+footer p{
+    font-size: 12px;
+}
+footer i{animation: move 5s infinite;cursor: pointer;}
+
+@keyframes move {
+    0%   {color: #fff}
+    25%  {transform: rotate(90deg);filter: hue-rotate(10deg)}
+    50%  {transform: rotate(180deg);filter:hue-rotate(600deg)}
+    75%  {transform: rotate(270deg);filter: hue-rotate(120deg)}
+    100% {transform: rotate(360deg);filter: hue-rotate(180deg);}
+}
+.time-up{transform: scale(2);animation: none;}
+
+footer i{
+    animation: move 5s infinite;
+    cursor: pointer;
+}
+
+footer{background: #222;position: fixed;bottom: 0;width: 100vw;padding: 20px;}
+footer p{font-size: 12px;}
+
+footer i{animation: move 5s infinite;cursor: pointer;}
+
+.time-up{transform: scale(2);animation: none;}
+
+
+.digital-time {float: right;color: white;line-height: 2;}
+.footer-container  {float: left;line-height: 2;}
+
+
+
+.digital-time {
+    float: right;
+    color: white;
+    line-height: 2;
+}
+/********************************************************************************************************************************* 
+THE LOGIN
+**********************************************************************************************************************************/
+
+.main-login-box{display:none;box-shadow: 1px 1px 6px #111; padding: 50px 100px;position: absolute;left: 50%;top: 40%;transform: translateX(-50%)translateY(200%);background: #FFFD82;}
+.main-login-box input{margin-bottom: 20px;}
+.main-login-box [type='submit']{padding: 10px 90px;}
+.main-login-box [type='submit']:hover{background: #A7E522;}
+
+.footer-container  {
+    float: left;
+    line-height: 2;
+} 
+.main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
+.main-login-box-error{animation: error 200ms 1;}
+  
+.header {background: #A7E522;width: 100vw;height: 6rem;}
+.header p, .header li a{color: rgb(40, 40, 40);}
+.header p:hover, .header li:hover{font-weight: bold;background: #FFFD82;}
+.header-nav li{float: left;padding: 20px 5px;}
+
+
+.header-nav a{padding: 20px;}
+.header-login{float: right;}
+.header-login p{padding: 20px;cursor: pointer;}
+
+.main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
+
+/* eror onclick voor backend */
+.header-login-error {background: #EF3E36 !important; animation: inlog-error  200ms 2!important;  }
+
+@media screen and (max-width: 500px) {
+    .header{height: 5rem;}
+    .header li, .header p{font-size: 12px;}
+}
+
+@media screen and (max-width: 400px) {
+    .header{height: 4.5rem;}
+    .header li, .header p{font-size: 10px;}
+}
+
+
+/********************************************************************************************************************************* 
+THE FOOTER
+**********************************************************************************************************************************/
+
+footer{background: #222;position: fixed;bottom: 0;width: 100vw;padding: 20px;}
+footer p{font-size: 12px;}
+footer i{animation: move 5s infinite;cursor: pointer;}
+
+.time-up{transform: scale(2);animation: none;}
+
+.digital-time {float: right;color: white;line-height: 2;}
+.footer-container  {float: left;line-height: 2;}
+
+
+
+
+
