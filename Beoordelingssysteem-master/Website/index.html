@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home pagina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<article class="maxw1">
+    <div class="grid-container">
+        <div class="grid-item"><img src="Avatars/Avatar1.png" class="image"/><button class="text" onclick="myFunction()">Klaasje</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar2.png" class="image"/><button class="text" onclick="myFunction()">pietje</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar3.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar4.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar5.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar6.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar7.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar8.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar9.jpg" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar10.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar11.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar12.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar13.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar14.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar15.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar16.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar17.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar18.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar19.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar20.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar21.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar22.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar23.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar24.jpg" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+        <div class="grid-item"><img src="Avatars/Avatar25.png" class="image"/><button class="text" onclick="myFunction()">Student naam</button></div>
+    </div>
+</article>
+
+<script src="jquery-3.3.1.min.js"></script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Static')">Statistiek</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+
+        <div id="Static" class="tabcontent">
+            <h3>Statistiek</h3>
+
+            <div class="container_diagram">
+            <img src="Diagram/Diagram.png" class="diagram"/>
+            </div>
+
+            <div class="container_cirkelDia">
+            <div id="piechart"></div>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+
+</div>
+<script src="index.js"></script>
+
+
+
+
+</body>
+</html>

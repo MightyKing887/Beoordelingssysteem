@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Chilanka|Cinzel&display=swap');
+
+:root{font-size: 10px;}
+
+*{box-sizing: border-box;}
+
+html,body{margin: 0;line-height: 1;box-sizing: border-box;overflow-x: hidden;}
+
+/* default input,textarea */
+input,textarea,fieldset{border: none;padding: 5px;background: #f4f4f4;display: block;}
+
+/* default button */
+button{border: none;cursor: pointer;padding: 15px 20px;font-weight: 300;text-transform: normal;text-align: center;}}
+button:hover{opacity: .7;}
+
+/* default margin,paddings */
+h1,h2,h3,h4,h5,h6,ol,ul,blockquote,figure,p{margin: 0;padding: 0;}
+
+/* default decoration */
+a,input {outline: none;text-decoration: none;}
+
+/* transitions */
+input[type="button"],input[type="submit"],a,button {transition: 0.2s ease-in-out; -moz-transition: 0.2s ease-in-out; -webkit-transition: 0.2s ease-in-out; cursor: pointer;}
+
+/* default img */
+img{max-width: 100%;}
+
+/* default font-family */
+html,body,ul,button,input,textarea,select,pre{font-family: 'Chilanka', cursive;}
+
+/* default normal font-sizes*/
+html,body,button,input,textarea,sub,small,select{font-size: 20px;}
+
+/* default title font-sizes */
+h1,h2,h3,h4,h5,h6{font-size: 32px;}
+
+/* default color */
+html,body,a,input,textarea,select,button{color: #000;}
+
+/* default text styles */
+html,body,a,b,strong,h1,h2,h3,h4,h5,h6{text-decoration: none;font-weight: normal;list-style: none;}
+
+ul,li,ol{list-style: none;}
+
+
+.maxw1{max-width: 1440px;margin: 0 auto;}
