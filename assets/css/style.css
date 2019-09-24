@@ -19,23 +19,14 @@ THE ANIMATION
     75%  {transform: translateX(12.5%)translateY(12.5%);filter: hue-rotate(4rad)}
     100% {transform: translateX(-50%)translateY(-50%);filter: hue-rotate(5rad)}
 } 
-=======
 
-@keyframes move {
-    0%   {color: #fff}
-    25%  {transform: rotate(90deg);filter: hue-rotate(10deg)}
-    50%  {transform: rotate(180deg);filter:hue-rotate(60deg)}
-    75%  {transform: rotate(270deg);filter: hue-rotate(120deg)}
-    100% {transform: rotate(360deg);filter: hue-rotate(180deg);}
+@keyframes inlog-error {
+    0% {transform: translateX(-50%)translateY(-50%);}
+    25% {transform: translateX(-47%)translateY(-50%);}
+    50% {transform: translateX(-50%)translateY(-50%);}
+    75% {transform: translateX(-53%)translateY(-50%);}
+    100% {transform: translateX(-50%)translateY(-50%);}
 }
-
-@keyframes inlog {
-    0%  {transform: translateX(200%)translateY(200%);filter: hue-rotate(1rad)}
-    25%  {transform: translateX(137.5%)translateY(137.5%);filter: hue-rotate(2rad)}
-    50%  {transform: translateX(75%)translateY(75%);filter: hue-rotate(3rad)}
-    75%  {transform: translateX(12.5%)translateY(12.5%);filter: hue-rotate(4rad)}
-    100% {transform: translateX(-50%)translateY(-50%);filter: hue-rotate(5rad)}
-} 
 
 
 
@@ -176,6 +167,11 @@ THE LOGIN
 .header-login{float: right;}
 .header-login p{padding: 20px;cursor: pointer;}
 
+.main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
+
+/* eror onclick voor backend */
+.header-login-error {background: #EF3E36 !important; animation: inlog-error  200ms 2!important;  }
+
 @media screen and (max-width: 500px) {
     .header{height: 5rem;}
     .header li, .header p{font-size: 12px;}
@@ -201,17 +197,6 @@ footer i{animation: move 5s infinite;cursor: pointer;}
 .footer-container  {float: left;line-height: 2;}
 
 
-/********************************************************************************************************************************* 
-THE LOGIN
-**********************************************************************************************************************************/
-
-.main-login-box{display:none;box-shadow: 1px 1px 6px #111; padding: 50px 100px;position: absolute;left: 50%;top: 40%;transform: translateX(-50%)translateY(200%);background: #FFFD82;}
-.main-login-box input{margin-bottom: 20px;}
-.main-login-box [type='submit']{padding: 10px 90px;}
-.main-login-box [type='submit']:hover{background: #A7E522;}
 
 
-.main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
-
-.main-login-box-active{display: block;transform: translateX(-50%)translateY(-50%);animation: inlog 1s 1;}
 
